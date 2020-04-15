@@ -2,7 +2,7 @@
 export interface Mundo {
   cases: number;
   deaths: number;
-  recoverd: number;
+  recovered: number;
   affectedCountries: number;
   updated: number;
 }

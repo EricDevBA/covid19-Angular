@@ -18,13 +18,14 @@ export class CovidapiService {
   async getInfoMundo() {
     return await this.http.get<Mundo>(`${this.url}/all`)
     .toPromise()
-    .then(mundo => {return mundo});
+    .then(mundo => mundo);
   }
 
   getInfoPais(pais: string = 'brazil') {
     return this.http.get<Pais>(`${this.url}/countries/${pais}`)
     .toPromise()
-    .then(pais => {return pais})
+    // tslint:disable-next-line: no-shadowed-variable
+    .then(pais => pais);
 }
 
 
