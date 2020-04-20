@@ -10,7 +10,7 @@ import { Mundo } from './../models/mundo.models';
 })
 export class CovidapiService {
 
-  url = 'https://corona.lmao.ninja'; // endpoint //
+  url = 'https://corona.lmao.ninja/v2'; // endpoint //
 
 
   constructor(private http: HttpClient) { }
